@@ -7,7 +7,7 @@ from types import SimpleNamespace
 from torch.utils.data import DataLoader, TensorDataset
 
 # --- Configuration ---
-PROJECT_ROOT = r".\trajectory\ST-DiffControlTraj-main"
+PROJECT_ROOT = "./trajectory/ST-DiffControlTraj-main"
 sys.path.append(PROJECT_ROOT)
 
 from utils.Traj_UNet import Guide_UNet
@@ -15,10 +15,10 @@ from utils.config import args
 from utils.utils import p_xt
 
 # Data & Model Paths
-DATA_ROOT_STRUCT = r".\trajectory\ST-DiffControlTraj-main\data"
-MODEL_PATH = r".\trajectory\ST-DiffControlTraj-main\ST-DiffControlTraj\unet_200.pt"
-DATA_ROOT_STATS_LARGE = r".\trajectory\ST-DiffControlTraj-main\data"
-OUTPUT_DIR = r".\trajectory\ST-DiffControlTraj-main\output"
+DATA_ROOT_STRUCT = "./trajectory/ST-DiffControlTraj-main/data"
+MODEL_PATH = "./trajectory/ST-DiffControlTraj-main/ST-DiffControlTraj/UNet_200.pt"
+DATA_ROOT_STATS_LARGE = "./trajectory/ST-DiffControlTraj-main/data"
+OUTPUT_DIR = "./trajectory/ST-DiffControlTraj-main/output"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -174,4 +174,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()

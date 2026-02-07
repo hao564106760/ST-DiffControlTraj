@@ -1,9 +1,9 @@
 args = {
     'data': {
         'dataset': 'Porto_Weather',
-        "traj_path1": r"./data/trajs_porto.npy",
-        "head_path2": r"./data/heads_porto.npy",
-        "road_path3": r"./data/roadseq_porto.npy",
+        "traj_path1": "./data/trajs_porto.npy",
+        "head_path2": "./data/heads_porto.npy",
+        "road_path3": "./data/roadseq_porto.npy",
         'traj_length': 200,
         'channels': 2,
         'uniform_dequantization': False,
